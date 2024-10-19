@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --background: #ffffff;
   --foreground: #171717;
 }
@@ -24,4 +24,10 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+} */
+
+.hero{
+  background: url('../public/assets/BG.png'), radial-gradient(circle, rgba(13, 148, 244, 0.911) 5%, #4B70F5 95%);
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
