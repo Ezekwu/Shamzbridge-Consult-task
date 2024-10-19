@@ -21,11 +21,11 @@ export default function Footer() {
           </div>
           <div className="md:col-span-4 grid gap-3 grid-cols-2 md:grid-cols-4 justify-between">
             {footerLinks.map((footerink)=>(
-              <div>
+              <div key={footerink.title}>
                 <h4 className="text-slate-800 font-semibold text-base mb-2">{footerink.title}</h4>
                 <div className="flex flex-col gap-2">
                   {footerink.links.map((link)=>(
-                    <Link className="text-sm text-slate-500 hover:text-primary-base" href={''}>{link}</Link>
+                    <Link className="text-sm text-slate-500 hover:text-primary-base" href={''} key={link}>{link}</Link>
                   ))}
                 </div>
               </div>
